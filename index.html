@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!----- Top Header ----->
+<div class="top-header">
+  <div class="social-media">
+      <a href="https://www.facebook.com/yourprofile" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://github.com/yourprofile" target="_blank">
+          <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://twitter.com/yourprofile" target="_blank">
+          <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/yourprofile" target="_blank">
+          <i class="fab fa-instagram"></i>
+      </a>
+  </div>
+
+  <div class="contact-info">
+      <span><i class="fa-solid fa-phone"></i> +123456789</span>
+      <span><i class="fa-solid fa-phone"></i> +123456789</span>
+      <a href="#" class="btn-call">CALL ME BACK</a>  
+  </div>
+</div>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="public/images/panacloud.png" alt="Logo">
+    </div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    <ul class="nav-right">
+      <li><a href="#whyUs">WHY US</a></li>
+      <li><a href="#about">About Us</a>
+      </li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#process">PROCESS</a></li>
+      <li><a href="#reviews">REVIEWS</a></li>
+      <li><a href="#skills">OUR SKILLS</a></li>
+      <li><a href="#contact">CONTACT US</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- JavaScript for Smooth Scrolling -->
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      document.getElementById(targetId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+<!----- Hero Section ----->
+  <section id="hero">
+    <div class="content">
+      <h1>WE ARE EXPERTS</h1>
+      <p>We deliver high-quality web development, design, and digital solutions that help your projects 
+        excel in a competitive market</p>
+
+      <a href="#about" class="btn">Read More</a>
+
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+<!-- Our Advantages Section -->
+<section id="advantages">
+  <h2><span>OUR</span> <span>ADVANTAGES</span></h2>
+
+  <p class="advantages-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  
+  <div class="advantage-boxes">
+      <div class="advantage-box">
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              
+              <path d="M12 2c3.313 0 6 2.686 6 6 0 2.233-1.205 4.156-3 5.19V16h-6v-2.81c-1.795-1.034-3-2.957-3-5.19 0-3.314 2.687-6 6-6z" fill="none" />
+                  
+              <rect x="10" y="16" width="4" height="3" fill="rgb(142, 198, 63)" />
+            </svg>
+          </div>
+          <h3>Innovation</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor /p>
+      </div>
+      <div class="advantage-box">
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-thumbs-up">
+              <path d="M7 10v12" />
+              <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z" />
+              <path d="M7 10v12H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13" fill="rgb(142, 198, 63)" />
+          </svg>
+          </div>
+          <h3>Quality</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      </div>
+
+      <div class="advantage-box">
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 64 64">
+              <circle cx="32" cy="32" r="31" stroke="black" stroke-width="2" fill="transparent"/>
+              <circle cx="32" cy="32" r="25" stroke="black" stroke-width="2" fill="transparent"/>
+              <circle cx="32" cy="32" r="28" stroke="rgb(142, 198, 63)" stroke-width="4" fill="transparent"/>
+              <line x1="32" y1="32" x2="32" y2="12" stroke="black" stroke-width="3"/> 
+              <line x1="32" y1="32" x2="50" y2="32" stroke="black" stroke-width="2"/>
+          </svg>
+      </div>
+      <h3>Experience</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      </div>
+
+      <div class="advantage-box">
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="75" height="75"> <!-- Change width and height here -->
+              <path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0z" fill="transparent" stroke="black" stroke-width="20"/>
+              <path d="M512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0z" fill="transparent" stroke="black" stroke-width="20"/>
+              <path d="M0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0z" fill="transparent" stroke="black" stroke-width="20"/>
+              <path d="M224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z" fill="transparent" stroke="black" stroke-width="20"/>
+              <path d="M128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z" fill="rgb(142, 198, 63)" stroke="black" stroke-width="20"/>
+          </svg>
+      </div>
+        <h3>Happy Clients</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      </div>
+
+      <div class="advantage-box">
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8z" fill="none" stroke="black"/>
+              
+              <path d="M18 10h2a2 2 0 0 1 2 2v8l-4-4h-6a2 2 0 0 1-2-2v-1" fill="rgb(142, 198, 63)" stroke="black"/>
+            </svg>
+       </div>
+          <h3>Support</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+       </div>
+   </div>
+</section>
+
+<!----- About -----> 
+<div id="about" class="about-section">
+  <div class="sharp-line"></div>
+  <h1 class="aboutHead"><span>ABOUT</span> <span>US</span></h1>
+  <div class="about">
+      <div class="content">
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,. Duis aute irure dolor in reprehenderit in 
+          </p>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+              nisi ut aliquip ex ea commodo consequat.. Duis aute irure dolor in reprehenderit in
+          </p> 
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+              fugiat nulla pariatur.. Duis aute irure dolor in reprehenderit in
+          </p>
+          <button class="aboutButton">LEARN MORE</button>
+      </div>
+      <div class="image">
+          <img src="public/images/about-us.png">
+      </div>
+  </div>
+</div>
+
+   <!-- Services Section -->
+<div class="services-section">
+  <div class="services-header">
+    <h1>OUR <span class="highlight">SERVICES</span></h1>
+    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua</p>
+  </div>
+
+  <div class="services-cards">
+      <!-- 1 - web Design -->
+      <div class="service-card" data-aos="flip-up" data-aos-duration="300">
+          <div class="service-icon">
+              <div class="star">&#9733;</div>
+          </div>
+          <div class="service-content">
+              <h1>Web Design</h1>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod</p>
+              <a class="read-more" href="#">read more</a>
+          </div>
+      </div>
+
+      <!-- 2 - Graphic Design-->
+      <div class="service-card" data-aos="flip-up" data-aos-duration="300">
+          <div class="service-icon">
+              <div class="star">&#9733;</div>
+          </div>
+          <div class="service-content">
+              <h1>Graphic Design</h1>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod</p>
+              <a class="read-more" href="#">read more</a>
+          </div>
+      </div>
+
+      <!-- 3 - Cloud Computing -->
+      <div class="service-card" data-aos="flip-up" data-aos-duration="300">
+          <div class="service-icon">
+              <div class="star">&#9733;</div>
+          </div>
+          <div class="service-content">
+              <h1>Branding</h1>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod</p>
+              <a class="read-more" href="#">read more</a>
+          </div>
+      </div>
+
+      <!-- 4 - Marketing -->
+      <div class="service-card" data-aos="flip-up" data-aos-duration="300">
+          <div class="service-icon">
+              <div class="star">&#9733;</div>
+          </div>
+          <div class="service-content">
+              <h1>Marketing</h1>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod</p>
+              <a class="read-more" href="#">read more</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!----- Portfolio Section ----->
+<div id="portfolio"class="portfolio-section">
+  <div class="portfolio-header">
+      <h1>OUR <span class="portfolio-title">PORTFOLIO</span></h1>
+      <p>Our portfolio highlights diverse projects across web development, AI, and cloud computing, 
+          showcasing innovation and client success.</p>
+  </div>
+  
+  <div class="portfolio-categories">
+      <h2 class="active" data-image="images/web-portfolio.png">WEB DEVELOPMENT</h2>
+      <h2 data-image="public/images/graphic-portfolio.jpg">Graphic Design</h2>
+      <h2 data-image="public/images/branding-portfolio.png">Branding</h2>
+      <h2 data-image="public/images/logos.webp">Logo</h2>
+      <h2 data-image="public/images/marketing-portfolio.jpg">MARKETING</h2>
+      <h2 data-image="public/images/advertisement-portfolio.png">ADVERTISEMENT</h2>
+  </div>
+  <div class="portfolio-display">
+    <img id="portfolioImage" src="public/images/web-portfolio.png" 
+    alt="Portfolio image" width="800" height="600">
+</div>
+</div>
+<div>
+  <script>
+    const categories = document.querySelectorAll('.portfolio-categories h2');
+    const portfolioImage = document.getElementById('portfolioImage');
+
+    categories.forEach(category => {
+        category.addEventListener('click', function () {
+            categories.forEach(cat => cat.classList.remove('active'));
+            this.classList.add('active');
+            const newImage = this.getAttribute('data-image');
+            portfolioImage.src = newImage;
+        });
+    });
+</script>
+</body>
+</html>
+
+ <!-----Our Process------>
+  <div id="process" class="process">
+    <h1>OUR <span class="highlight">PROCESS</span></h1>
+    <p class="description">Our approach is collaborative and transparent, 
+      ensuring your vision is at the forefront of every step. Together, 
+      we bring your ideas to life with innovation and creativity.</p>
+  </div>
+
+  <div class="processContainer">
+    <div class="processStep card" data-aos="flip-left" data-aos-duration="400">
+      <div class="numberCircle">1</div>
+      <div class="iconCircle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350" width="50" height="60">
+       
+          <rect x="10" y="0" width="180" height="300" rx="20" ry="20" fill="rgb(142, 198, 63)"/>
+        
+          <rect x="10" y="0" width="180" height="30" rx="20" ry="20" fill="rgb(103, 142, 25)"/>
+          
+          <rect x="10" y="260" width="180" height="50" rx="20" ry="20" fill="rgb(103, 142, 25)"/>
+          
+          <rect x="70" y="270" width="60" height="20" rx="10" ry="10" fill="white"/>
+        
+          <path d="M50 160 l30 30 l60 -60" stroke="white" stroke-width="14" fill="none"/>
+        </svg>
+        
+      </div>
+      <h1>REQUEST CALL</h1>
+      <p>Lorem ipsum dolor amet consectet</p>
+    </div>
+
+    <div class="processStep card" data-aos="flip-left" data-aos-duration="400">
+      <div class="numberCircle">2</div>
+      <div class="iconCircle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="65" height="70">
+          <g transform="scale(-1,1) translate(-700, 160)">
+            <path d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l96 0 0 80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416 448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0z" 
+            fill="rgb(103, 142, 25)" />
+          </g>
+          <path d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l96 0 0 80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416 448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0z" 
+          fill="rgb(142, 198, 63)" />
+    
+          <circle cx="160" cy="200" r="30" fill="white"/>
+          <circle cx="270" cy="200" r="30" fill="white"/>
+          <circle cx="380" cy="200" r="30" fill="white"/>
+        </svg>
+      </div>
+      <h1>CONSULTATION</h1>
+      <p>Lorem ipsum dolor amet consectet</p>
+    </div>
+
+    <div class="processStep card" data-aos="flip-left" data-aos-duration="400">
+      <div class="numberCircle">3</div>
+      <div class="iconCircle">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+           viewBox="0 0 490 490" xml:space="preserve" fill="#000000" width="63" height="63">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+              <g>
+                  <g id="XMLID_45_">
+                      <g>
+                          <polygon style="fill:rgb(142, 198, 63);" points="430,110 430,480 60,480 60,10 330,10 330,110"></polygon>
+                          <polygon style="fill:rgb(103, 142, 25);" points="430,110 330,110 330,10"></polygon>
+                      </g>
+                      <g>
+                          <path style="fill:#ffffff;" d="M439.976,110c-0.001-2.602-0.992-5.159-2.904-7.071l-100-100c-1.912-1.913-4.47-2.904-7.071-2.904 V0H60c-5.522,0-10,4.477-10,10v470c0,5.523,4.478,10,10,10h370c5.522,0,10-4.477,10-10V110H439.976z M340,34.142L405.857,100H340 V34.142z M70,470V20h250v90c0,5.523,4.478,10,10,10h90v350H70z"></path>
+      
+                          <rect x="140" y="180" style="fill:#ffffff;" width="200" height="10"></rect>
+                          <rect x="140" y="220" style="fill:#ffffff;" width="200" height="10"></rect>
+                          <rect x="140" y="260" style="fill:#ffffff;" width="200" height="10"></rect>
+                          <rect x="140" y="260" style="fill:#ffffff;" width="200" height="10"></rect>
+                          
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>   
+  </div>
+      <h1>PLANNING</h1>
+      <p>Lorem ipsum dolor amet consectet</p>
+</div>
+ 
+<div class="processStep card" data-aos="flip-left" data-aos-duration="400">
+  <div class="numberCircle">4</div>
+  <div class="iconCircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50" height="50">
+      <path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" fill="rgb(142, 198, 63)"/>
+      <circle cx="256" cy="256" r="80" fill="rgb(240, 242, 242)"/>
+      <circle cx="256" cy="256" r="60" fill="rgb(142, 198, 63)" />
+      <circle cx="256" cy="256" r="40" fill="rgb(240, 242, 242)" />
+  </svg>
+  </div>
+     <h1>WORK PROCESS</h1>
+      <p>Lorem ipsum dolor amet consectet</p>
+    </div>
+
+    <div class="processStep card" data-aos="flip-left" data-aos-duration="400">
+      <div class="numberCircle">5</div>
+      <div class="iconCircle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="58px">
+          <g transform="scale(-1, 1) translate(-512, 0)">
+              <path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231z" fill="rgb(142, 198, 63)"/> 
+      
+              <path d="M160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1 0 32c0 8.8 7.2 16 16 16l32 0z" fill="rgb(142, 198, 63)"/> 
+      
+              <path d="M362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0z" fill="rgb(103, 142, 25)"/> 
+      
+              <path d="M315.3 186.7l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" fill="rgb(103, 142, 25)"/> 
+      
+              <path d="M410 210c15 15 15 39 0 54s-39 15-54 0-15-39 0-54 39-15 54 0z" fill="rgba(0, 0, 0, 0.1)"/>
+          </g>
+      </svg>
+    </div>
+      <h1>CORRECTING</h1>
+      <p>Lorem ipsum dolor amet consectet</p>
+    </div>
+
+    <div class="processStep card" data-aos="flip-left" data-aos-duration="400">
+      <div class="numberCircle">6</div>
+      <div class="iconCircle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+         
+          <rect x="70" y="70" width="60" height="60" rx="5" ry="5" fill="rgb(142, 198, 63)" stroke="rgb(142, 198, 63)" stroke-width="3"/>
+        
+          <path d="M80 90 l20 20 l45 -45" stroke="green" stroke-width="9" fill="none"/>
+        </svg>
+      </div>
+      <h1>DELIVER</h1>
+      <p>Lorem ipsum dolor amet consectet</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!----- people About Us ----->
+<section>
+  <div id="reviews" class="team">
+    <div class="divider"></div>
+    <h1 class="section-header">PEOPLE <span>ABOUT US</span></h1>
+    <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+      labore et dolore magna aliqua. Ut enim ad minim and a search for lorem ipsum</p>
+
+   <div class="team-members">
+        <div class="member-column">
+            <div class="member-info">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round">
+                        <circle cx="12" cy="8" r="5"/>
+                        <path d="M20 21a8 8 0 0 0-16 0"/>
+                    </svg>
+                </div>
+                <div class="member-details">
+                    <h1>JOHN DOE</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                      ut labore et dolore mag and a search</p>
+                </div>
+            </div>
+            <hr>
+            <div class="member-info">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round">
+                        <circle cx="12" cy="8" r="5"/>
+                        <path d="M20 21a8 8 0 0 0-16 0"/>
+                    </svg>
+                </div>
+                <div class="member-details">
+                    <h1>JOHN DOE</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                      et dolore mag and a search</p>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-separator"></div>
+        <hr>
+        <div class="member-column">
+            <div class="member-info">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                    class="lucide lucide-user-round">
+                        <circle cx="12" cy="8" r="5"/>
+                        <path d="M20 21a8 8 0 0 0-16 0"/>
+                    </svg>
+                </div>
+                <div class="member-details">
+                    <h1>JOHN DOE</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                      labore et dolore mag and a search</p>
+                </div>
+            </div>
+            <hr>
+            <div class="member-info">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 24 24" fill="none" 
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                    class="lucide lucide-user-round">
+                        <circle cx="12" cy="8" r="5"/>
+                        <path d="M20 21a8 8 0 0 0-16 0"/>
+                    </svg>
+                </div>
+                <div class="member-details">
+                    <h1>JOHN DOE</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                      incididunt ut labore et dolore mag and a search</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-wrapper">
+      <div class="dot dot-orange"></div>
+      <div class="dot dot-yellow"></div>
+      <div class="dot dot-yellow"></div>
+    </div>
+  </div>
+</section>
+
+  <!------ Skill Section ------>
+<div id="skills" class="mainSkill">
+  <div class="skills">
+    <h1>OUR <span class="highlight">SKILLS</span></h1>
+    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+      et dolore magna aliqua.</p>
+  </div>
+
+  <div class="skillContainer">
+    <div class="mainCircles">
+      <div class="progress-circle-1">
+        <div class="progress-fill-1-outer"></div>
+        <div class="progress-fill-1-inner"></div>
+        <span class="progress-text">45%</span>
+      </div>
+    </div>
+
+    <div class="mainCircles">
+      <div class="progress-circle-2">
+        <div class="progress-fill-2-outer"></div>
+        <div class="progress-fill-2-inner"></div>
+        <span class="progress-text">60%</span>
+      </div>
+      <h3 class="skillTitle">SEO & ADS</h3>
+    </div>
+
+    <div class="mainCircles">
+      <div class="progress-circle-3">
+        <div class="progress-fill-3-outer"></div>
+        <div class="progress-fill-3-inner"></div>
+        <span class="progress-text">75%</span>
+      </div>
+      <h3 class="skillTitle">BRANDING</h3>
+    </div>
+
+    <div class="mainCircles">
+      <div class="progress-circle-4">
+        <div class="progress-fill-4-outer"></div>
+        <div class="progress-fill-4-inner"></div>
+        <span class="progress-text">80%</span>
+      </div>
+      <h3 class="skillTitle">WEB DESIGN</h3>
+    </div>
+  </div>
+</div>
+
+<!----- Start project ----->
+<div class="start">
+  <h1>START YOUR NEW PROJECT</h1>
+  <div class="startDetails">
+    <input type="text" id="name" name="name"  autocomplete="given-name"  placeholder="YOUR NAME">
+    <input type="email" id="email" name="email"  autocomplete="given-email"  placeholder="YOUR EMAIL">
+    <input type="tel" id="phone" name="phone" autocomplete="off" placeholder="YOUR PHONE">
+    <button type="submit">SEND REQUEST</button>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+    incididunt ut labore et dolore magna aliqua. </p>
+</div>
+
+<!-----Contact Section ----->
+    <div id="contact" class="contact-section">
+        <h1><span class="black">OUR</span> <span class="green">CONTACT</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. 
+          In condimentum facilisis porta. </p>
+
+        <div class="contact-info">
+            <i class="fa fa-phone"></i> +123 456 7890 &nbsp;|&nbsp; 
+            <i class="fa fa-phone"></i> +987 654 3210 &nbsp;|&nbsp; 
+            <i class="fa fa-envelope"></i> info@yourbusiness.com
+        </div>
+      <!----- Location Map ----->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14472.35146127088!2d66.97315656084112!3d24.929076488290164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb36bd7a47f210f%3A0xf3eb92671c624d70!2z2LPYqNit2KfZhiDYp9mE2YTZkdmw24Eg2YbZhdqp2Ygg2KjbjNqp2LHbjCBPcmFuZ2kgdG93biAxMCBudW1iZXIgbWFya2V0!5e0!3m2!1sen!2s!4v1729774905823!5m2!1sen!2s" width="600" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">  
+        </iframe>
+    </div>
+   
+<!----- Footer ----->
+<div id="chartdiv"></div> 
+<div class="footer">
+  <div class="footer-1">
+    <img src="public/images/panacloud.png" alt="panacloud" width="140" height="70">
+    <p class="footer-D">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore m</p>
+    <p class="footer-copy">©Panacloud <span class="footer-year">2024</span></p>
+  </div>
+
+  <div class="footer-2">
+    <h1 class="footer-heading">SERVICES</h1>
+    <ul class="footer-list">
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum </li>
+      <li>Lorem ipsum dolor  </li>
+      <li>Lorem ipsum dolor s</li>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum </li>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum do</li>
+    </ul>
+  </div>
+
+  <div class="vertical-line"></div> <div class="footer-3">
+    <h1 class="footer-heading">USEFUL LINKS</h1>
+    <ul class="footer-list">
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dol</li>
+      <li>Lorem</li>
+      <li>Ipsum</li>
+      <li>Lorem ipsum</li>
+      <li>Lorem is</li>
+      <li>dolor sit amet</li>
+      <li>Lorem ipsum dolor</li>
+    </ul>
+  </div>
+
+  <div class="vertical-line"></div>
+  <div class="footer-4">
+    <h1 class="footer-heading">CONTACT</h1>
+    <div class="f-4">
+      <span><i class="fa-solid fa-phone"></i> +92(318)011-6689</span><br>
+      <span><i class="fa-solid fa-phone"></i> +92(314)543-9876</span><br>
+      <span><i class="fa-solid fa-envelope"></i> shum029@gmail.com</span>
+    </div>
+    <h1 class="footer-follow">FOLLOW US</h1>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+        
+      <a href="https://github.com" target="_blank">
+        <i class="fab fa-github"></i></a>
+     
+      <a href="https://linkedin.com" target="_blank">
+        <i class="fab fa-linkedin-in"></i></a>
+
+      <a href="https://twitter.com" target="_blank">
+          <i class="fab fa-twitter"></i></a>
+
+      <a href="https://instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
